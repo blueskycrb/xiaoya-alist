@@ -28,10 +28,10 @@ jobs:
 
       - 
         name: Run sh-checker
-        uses: luizm/action-sh-checker@v0.8.0
+        uses: luizm/action-sh-checker@v0.9.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SHFMT_OPTS: -d -i 4 -sr
         with:
           sh_checker_comment: true
-          sh_checker_exclude: "^backup/* ^xiaoyahelper/*"
+          sh_checker_exclude: "^deprecation/* ^xiaoyahelper/*"
